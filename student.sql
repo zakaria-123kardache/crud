@@ -7,7 +7,7 @@ CREATE TABLE donnes (
     id INT PRIMARY KEY AUTO_INCREMENT ,
     name VARCHAR(30),
     photo VARCHAR(250),
-    Prenom VARCHAR(30),
+    prenom VARCHAR(30),
     date DATE,
     grade FLOAT
 );

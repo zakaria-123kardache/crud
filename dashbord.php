@@ -20,7 +20,7 @@ if ($result = mysqli_query($link, $sql)) {
       echo " <tr>";
       echo " <td>" . $row['id'] . "</td>";
       echo " <td>"  . $row['name'] . "</td>";
-      echo "<td>" . $row['Prenom'] . "</td>";
+      echo "<td>" . $row['prenom'] . "</td>";
       echo "<td>" . $row['photo'] . "</td>";
       echo "<td>" . $row['grade'] . "</td>";
       echo "<td>" . $row['date'] . "</td>";
