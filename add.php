@@ -1,5 +1,41 @@
 <?php
 include("./connexion.php");
+
+  $name = $Prenom = $grade = $date = $photo = "";
+
+ if ( $_SERVER["REQUEST_METHOD"] == "post")
+ {
+  $input_name = ($_POST["name"]);
+  $input_Prenom = ($_POST["prenom"]);
+  $input_date = ($_POST["date"]);
+  $input_grade = ($_POST["grade"]);
+  $input_photo = ($_POST["photo"]);
+
+  
+
+ }
+//  if 
+//  ( $_SERVER["REQUEST_METHOD"] == "post")
+//  {
+//   $input_Prenom = ($_POST["prenom"]);
+//  }
+
+//  if ( $_SERVER["REQUEST_METHOD"] == "post")
+//  {
+//   $input_date = ($_POST["date"]);
+//  }
+
+//  if ( $_SERVER["REQUEST_METHOD"] == "post")
+//  {
+//   $input_grade = ($_POST["grade"]);
+//  }
+ 
+//  if ( $_SERVER["REQUEST_METHOD"] == "post"){
+//   $input_photo = ($_POST["photo"]);
+
+//  }
+
+
 ?>
 
 
@@ -18,7 +54,7 @@ include("./connexion.php");
   <form method="post">
 
     <label for="name"> name:</label><br>
-    <input type="text" id="fname" name="name"><br>
+    <input type="text"  name="name"><br>
 
     <label for="prenom">prenom:</label><br>
     <input type="text" name="prenom"><br><br>
@@ -30,9 +66,9 @@ include("./connexion.php");
     <input type="date" name="date"><br><br>
 
     <label for="date">Grad</label>
-    <input type="number" id="price"
-      name="price" min="0"
-      max="1000" step="0.01" /><br><br>
+    <input type="number" i
+      name="date" min="0"
+      max="1000" step="0.10" /><br><br>
 
     <input type="submit" value="Submit">
   </form>
